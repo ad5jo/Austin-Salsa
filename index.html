@@ -4,9 +4,9 @@
 	<title>Austin-Salsa</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=320, initial-scale=1">
-	
-<!-- 
-GET https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css 
+
+<!--
+GET https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 net::ERR_INTERNET_DISCONNECTED
 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,22 +17,22 @@ net::ERR_INTERNET_DISCONNECTED
 
 
 
-	<meta name="keywords" content="Austin, Salsa, Austin-Salsa,austinsalsa, Dance, Bachata, Durkee, AD5JO" /> 
-	<meta name="Dave Durkee" content=""> 
+	<meta name="keywords" content="Austin, Salsa, Austin-Salsa,austinsalsa, Dance, Bachata, Durkee, AD5JO" />
+	<meta name="Dave Durkee" content="">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-<!-- 
+<!--
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/prettyPhoto.css" rel="stylesheet"> 
-	<link href="css/font-awesome.min.css" rel="stylesheet"> 
-	<link href="css/animate.css" rel="stylesheet"> 
-	<link href="css/responsive.css" rel="stylesheet"> 
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	
-	<link rel="shortcut icon" href="images/cslogo.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"> 
+
+	<link rel="shortcut icon" href="images/cslogo.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
  -->
 
@@ -42,22 +42,27 @@ net::ERR_INTERNET_DISCONNECTED
 	<link rel="stylesheet" type="text/css" href="assets/css/style_id.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style_class.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style_media.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style_hangman.css">
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/style_salsa.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style_hangman.css"> -->
+	<script type="text/javascript" src="assets/javascript/myjavascript.js"></script>
 	<!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
-	
+
 </head>
 
 <body>
 
 <script type="text/javascript">
 // all moved to the game.js file
+$(document).ready(function () {
+	<audio id="myAudio">
+	  <source src="./assets/audio/"+ s_songs[0] +".mp3" type="audio/mpeg" >
+	</audio>
+});
+
 </script>
 
 
-<audio id="myAudio">
-  <source src="./assets/audio/Salsa.mp3" type="audio/mpeg" >
-</audio>
+
 
 <h1 id = "PAGE_TITLE" >Austin-Salsa</h1>
 
@@ -84,9 +89,9 @@ net::ERR_INTERNET_DISCONNECTED
 			<div class="col-md-3"></div>
 
 			 <div class="col-md-6">
-				<a href="https://www.danceu2.com/">Check out DanceU2.com for dance lessons</a>
+				<a href="https://www.danceu2.com/"  id="id_url">Check out DanceU2.com for dance lessons</a>
 				<br>
-				<a href="./raul.html">Check out Raul Ramiraz for dance lessons</a>
+				<a href="./raul.html" id="id_url">Check out Raul Ramiraz for dance lessons</a>
 			</div>
 
 			  <div class="col-md-3"></div>
@@ -112,7 +117,7 @@ net::ERR_INTERNET_DISCONNECTED
 					Contact Dave Durkee:
 					<a href="mailto:ad5jo@yahoo.com?Subject=austin-salsa%20list%20 request" target="_top">Click to send an email</a>
 				</p>
-				
+
 
 			  </div>
 			  <div class="col-md-3"></div>
@@ -121,6 +126,6 @@ net::ERR_INTERNET_DISCONNECTED
 		</div>
 	</div>
 	<!-- ------------------------------------------------------------------------- -->
-		
+
 </body>
 </html>
